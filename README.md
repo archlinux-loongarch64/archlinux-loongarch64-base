@@ -1,6 +1,23 @@
 # archlinux-loongarch64-base
 archlinux的loongarch64-bootstrap版本(为了可以迅速迭代跟进上游工具链，此项目只滚动base-devel包组)，基础工具链源码取自https://github.com/loongson 下的linux/gcc/glibc/binutils ，使用上游社区开源版本构建的新世界distro，运行在LoongArch平台。
 
+
+#### tag:0.3 archlinux-bootstrap-2022.04.15-loongarch64
+
+1. Upgrade using the latest basic software version (github.com/loongson: gcc/binutils/glibc)
+2. Add basic tools: meson, ninja, cmake
+3. Add the preinstalled software list file pkglist.loongarch64.txt
+
+| package | branch | commit hash | url |
+| ---- | ---- | ---- | ---- |
+| binutils | upstream_v4.1 | f9b0887de1111349310acf79326f6b33bb0cc221 | https://github.com/loongson/binutils-gdb.git |
+| gcc | loongarch-12 | e7d20cc74d581de32effac595a673f27b7fec826 | https://github.com/loongson/gcc.git |
+| glibc | loongarch_2_36_dev_v3 | 24471ad8e7f0e7523809bf789b47f910b3a47315 | https://github.com/loongson/glibc.git |
+| linux | loongarch-next | 3643df5f058aacf69ac4121f6882500e843b7a34 | https://github.com/loongson/linux.git |
+| systemd | dev-loongarch | 350489abb1c9ce4e43dab54b7af7d1a1bfbfb3b8 | https://github.com/loongarch64/systemd.git |
+| libffi | loongarch-3_4_2 | 70602040e7a319ad4131aad422d59a493bc65f18 | https://github.com/loongson/libffi.git |
+| libseccomp | dev-main | 5b4ba10fd1a9ad5baa85ebecafd36c401a030788 |https://github.com/loongarch64/libseccomp.git |
+
 ### v0.2: archlinux-bootstrap-2022.03.18-loongarch64.tar.gz 
 
 ```
